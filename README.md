@@ -152,17 +152,3 @@ Saved plot: regression_line.png
 
 See `requirements.txt`. Tested with Python 3.10+.
 
-## 📝 Notes for Extending This Project
-
-- To use your **own dataset**, replace `Salary_Data.csv` and update the
-  `X = df[["YearsExperience"]]` and `y = df["Salary"]` lines in
-  `linear_regression_salary.py` with your actual column names.
-- If your dataset has **multiple features** (Multiple Linear
-  Regression), simply include more columns in `X`
-  (e.g., `X = df[["feature1", "feature2", "feature3"]]`). Note that the
-  "Regression Line" plot only applies to single-feature datasets; for
-  multiple features, rely on the "Actual vs Predicted" plot instead.
-- If your dataset has missing values, the script automatically detects
-  and removes incomplete rows. For more advanced handling (e.g., mean/
-  median imputation), you can replace the `dropna()` step with
-  `SimpleImputer` from `sklearn.impute`.
